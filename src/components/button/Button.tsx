@@ -29,7 +29,7 @@ type AnchorButtonProps = BaseButtonProps &
 
 export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
 
-const Button: React.FC<ButtonProps> = (props) => {
+export const Button: React.FC<ButtonProps> = (props) => {
   const {
     className,
     disabled,
