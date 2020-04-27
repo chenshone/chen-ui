@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import classNames from 'classnames'
 import {
   FontAwesomeIcon,
@@ -16,10 +16,19 @@ export type ThemeProps =
   | 'dark'
 
 export interface IconProps extends FontAwesomeIconProps {
+  /**
+   * icon的主题
+   */
   theme?: ThemeProps
 }
 
-const Icon: React.FC<IconProps> = (props) => {
+/**
+ * 各种Icon， Icon采用react-awesome-font，所以具体的各种icon查看react-awesome-font
+ * ~~~js
+ * import { Icon } from 'chen-ui'
+ * ~~~
+ */
+const Icon: FC<IconProps> = (props) => {
   // icon-primary
   const { className, theme, ...restProps } = props
   const classes = classNames('icon', className, {

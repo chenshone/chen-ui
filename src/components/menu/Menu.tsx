@@ -1,4 +1,10 @@
-import React, { createContext, useState, FunctionComponentElement } from 'react'
+import React, {
+  createContext,
+  useState,
+  FunctionComponentElement,
+  FC,
+  CSSProperties,
+} from 'react'
 import classNames from 'classnames'
 import { MenuItemProps } from './MenuItem'
 
@@ -6,11 +12,15 @@ type MenuMode = 'horizontal' | 'vertical'
 type SelectCallback = (selectedIndex: string) => void
 
 export interface MenuProps {
+  /**默认 active 的菜单项的索引值 */
   defaultIndex?: string
   className?: string
+  /**菜单类型 横向或者纵向 */
   mode?: MenuMode
-  style?: React.CSSProperties
-  onSelect?: SelectCallback
+  style?: CSSProperties
+  /**点击菜单项触发的回掉函数 */
+  onSelect?: (selectedIndex: string) => void
+  /**设置子菜单的默认打开 只在纵向模式下生效 */
   defaultOpenSubMenus?: string[]
 }
 
@@ -23,7 +33,13 @@ interface IMenuContext {
 // 传递index给child，以便知晓当然active为哪一个
 export const MenuContext = createContext<IMenuContext>({ index: '0' })
 
-export const Menu: React.FC<MenuProps> = (props) => {
+/**
+ * 具有导航功能的菜单。支持横向纵向两种模式，支持下拉菜单。
+ * ~~~js
+ * import { Menu } from 'chenui'
+ * ~~~
+ */
+export const Menu: FC<MenuProps> = (props) => {
   const {
     className,
     defaultIndex,

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC, ButtonHTMLAttributes, AnchorHTMLAttributes } from 'react'
 import classNames from 'classnames'
 
 export type ButtonSize = 'lg' | 'sm'
@@ -6,21 +6,30 @@ export type ButtonType = 'primary' | 'default' | 'danger' | 'link'
 
 interface BaseButtonProps {
   className?: string
+  /**设置 Button 的禁用 */
   disabled?: boolean
+  /**设置 Button 的尺寸 */
   size?: ButtonSize
+  /**设置 Button 的类型 */
   btnType?: ButtonType
   children: React.ReactNode
   href?: string
 }
 
-type NativeButtonProps = BaseButtonProps &
-  React.ButtonHTMLAttributes<HTMLElement>
-type AnchorButtonProps = BaseButtonProps &
-  React.AnchorHTMLAttributes<HTMLElement>
+type NativeButtonProps = BaseButtonProps & ButtonHTMLAttributes<HTMLElement>
+type AnchorButtonProps = BaseButtonProps & AnchorHTMLAttributes<HTMLElement>
 
 export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
 
-export const Button: React.FC<ButtonProps> = (props) => {
+/**
+ * 具有动画效果的button按钮
+ * ### 引用方法
+ *
+ * ~~~js
+ * import { Button } from 'chenui'
+ * ~~~
+ */
+export const Button: FC<ButtonProps> = (props) => {
   const {
     className,
     disabled,

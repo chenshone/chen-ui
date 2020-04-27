@@ -1,4 +1,9 @@
-import React, { useState, FunctionComponentElement, useContext } from 'react'
+import React, {
+  useState,
+  FunctionComponentElement,
+  useContext,
+  FC,
+} from 'react'
 import classNames from 'classnames'
 import { CSSTransition } from 'react-transition-group'
 import { CSSTransitionProps } from 'react-transition-group/CSSTransition'
@@ -14,7 +19,7 @@ export interface SubMenuProps {
   className?: string
 }
 
-export const SubMenu: React.FC<SubMenuProps> = ({
+export const SubMenu: FC<SubMenuProps> = ({
   index,
   title,
   className,
