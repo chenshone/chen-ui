@@ -1,8 +1,12 @@
 import React, { useState, FunctionComponentElement, useContext } from 'react'
 import classNames from 'classnames'
+import { CSSTransition } from 'react-transition-group'
+import { CSSTransitionProps } from 'react-transition-group/CSSTransition'
 
 import { MenuContext } from './Menu'
 import { MenuItemProps } from './MenuItem'
+import Icon from '../icon/Icon'
+import Transition from '../transition/Transition'
 
 export interface SubMenuProps {
   index?: string
@@ -17,6 +21,7 @@ export const SubMenu: React.FC<SubMenuProps> = ({
   children,
 }) => {
   const context = useContext(MenuContext)
+  // 可以同时打开多个 所以是个数组
   const openedSubMenus = context.defaultOpenSubMenus as Array<string>
   const isOpened =
     index && context.mode === 'vertical'
@@ -27,6 +32,8 @@ export const SubMenu: React.FC<SubMenuProps> = ({
 
   const classes = classNames('menu-item submenu-item', className, {
     'is-active': context.index === index,
+    'is-opened': menuOpen,
+    'is-vertical': context.mode === 'vertical',
   })
 
   // subMenu隐藏于展开
@@ -75,13 +82,18 @@ export const SubMenu: React.FC<SubMenuProps> = ({
         console.error('warning: SubMenu的child必须是一个MenuItem')
       }
     })
-    return <ul className={subMenuClasses}>{childrenComponent}</ul>
+    return (
+      <Transition in={menuOpen} timeout={300} animation="zoom-in-top">
+        <ul className={subMenuClasses}>{childrenComponent}</ul>
+      </Transition>
+    )
   }
 
   return (
     <li key={index} className={classes} {...hoverEvents}>
       <div className="submenu-title" {...clickEvents}>
         {title}
+        <Icon icon="angle-down" className="arrow-icon" />
       </div>
       {renderChildren()}
     </li>

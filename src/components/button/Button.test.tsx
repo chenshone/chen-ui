@@ -7,8 +7,8 @@ const defaultProps = {
   onClick: jest.fn(),
 }
 const testProps: ButtonProps = {
-  btnType: ButtonType.Primary,
-  size: ButtonSize.Large,
+  btnType: 'primary',
+  size: 'lg',
   className: 'klass',
 }
 
@@ -36,7 +36,7 @@ describe('test button component', () => {
   })
   it('link button and href is provided', () => {
     const wrapper = render(
-      <Button btnType={ButtonType.Link} href="http://www.baidu.com">
+      <Button btnType="link" href="http://www.baidu.com">
         Link
       </Button>
     )
