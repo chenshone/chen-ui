@@ -23,7 +23,7 @@ export interface IconProps extends FontAwesomeIconProps {
 }
 
 /**
- * 各种Icon， Icon采用react-awesome-font，所以具体的各种icon查看react-awesome-font
+ * 各种Icon， Icon采用fontAwesome，所以具体的各种icon查看fontAwesome
  * ~~~js
  * import { Icon } from 'chen-ui'
  * ~~~
