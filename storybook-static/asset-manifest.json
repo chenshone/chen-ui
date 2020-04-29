@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/chenshone/chen-ui/static/css/main.8c0d86de.chunk.css",
-    "main.js": "/chenshone/chen-ui/main.ee682e69eddd16fba2d9.bundle.js",
+    "main.js": "/chenshone/chen-ui/main.71b3400a3825b8369ea3.bundle.js",
     "main.css.map": "/chenshone/chen-ui/static/css/main.8c0d86de.chunk.css.map",
-    "main.js.map": "/chenshone/chen-ui/main.ee682e69eddd16fba2d9.bundle.js.map",
-    "runtime~main.js": "/chenshone/chen-ui/runtime~main.ee682e69eddd16fba2d9.bundle.js",
-    "runtime~main.js.map": "/chenshone/chen-ui/runtime~main.ee682e69eddd16fba2d9.bundle.js.map",
+    "main.js.map": "/chenshone/chen-ui/main.71b3400a3825b8369ea3.bundle.js.map",
+    "runtime~main.js": "/chenshone/chen-ui/runtime~main.71b3400a3825b8369ea3.bundle.js",
+    "runtime~main.js.map": "/chenshone/chen-ui/runtime~main.71b3400a3825b8369ea3.bundle.js.map",
     "vendors~main.css": "/chenshone/chen-ui/static/css/vendors~main.f8f248a5.chunk.css",
-    "vendors~main.js": "/chenshone/chen-ui/vendors~main.ee682e69eddd16fba2d9.bundle.js",
+    "vendors~main.js": "/chenshone/chen-ui/vendors~main.71b3400a3825b8369ea3.bundle.js",
     "vendors~main.css.map": "/chenshone/chen-ui/static/css/vendors~main.f8f248a5.chunk.css.map",
-    "vendors~main.js.map": "/chenshone/chen-ui/vendors~main.ee682e69eddd16fba2d9.bundle.js.map",
+    "vendors~main.js.map": "/chenshone/chen-ui/vendors~main.71b3400a3825b8369ea3.bundle.js.map",
     "iframe.html": "/chenshone/chen-ui/iframe.html",
-    "precache-manifest.454bf53f7923d4f8ce5ced759a958a7f.js": "/chenshone/chen-ui/precache-manifest.454bf53f7923d4f8ce5ced759a958a7f.js",
+    "precache-manifest.53e2fbb0d21c6e0c14de9e554a129c30.js": "/chenshone/chen-ui/precache-manifest.53e2fbb0d21c6e0c14de9e554a129c30.js",
     "service-worker.js": "/chenshone/chen-ui/service-worker.js",
-    "vendors~main.ee682e69eddd16fba2d9.bundle.js.LICENSE.txt": "/chenshone/chen-ui/vendors~main.ee682e69eddd16fba2d9.bundle.js.LICENSE.txt"
+    "vendors~main.71b3400a3825b8369ea3.bundle.js.LICENSE.txt": "/chenshone/chen-ui/vendors~main.71b3400a3825b8369ea3.bundle.js.LICENSE.txt"
   },
   "entrypoints": [
-    "runtime~main.ee682e69eddd16fba2d9.bundle.js",
+    "runtime~main.71b3400a3825b8369ea3.bundle.js",
     "static/css/vendors~main.f8f248a5.chunk.css",
-    "vendors~main.ee682e69eddd16fba2d9.bundle.js",
+    "vendors~main.71b3400a3825b8369ea3.bundle.js",
     "static/css/main.8c0d86de.chunk.css",
-    "main.ee682e69eddd16fba2d9.bundle.js"
+    "main.71b3400a3825b8369ea3.bundle.js"
   ]
 }
