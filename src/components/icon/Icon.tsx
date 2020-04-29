@@ -23,9 +23,9 @@ export interface IconProps extends FontAwesomeIconProps {
 }
 
 /**
- * 各种Icon， Icon组件支持FontAwesome
+ * 各种Icon
  * ~~~js
- * import { Icon } from 'chen-ui'
+ * import { Icon } from 'chenshone-ui'
  * ~~~
  */
 const Icon: FC<IconProps> = (props) => {

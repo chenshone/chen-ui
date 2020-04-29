@@ -29,7 +29,7 @@ export interface InputProps
  *
  * ~~~js
  * // 这样引用
- * import { Input } from 'chen-ui'
+ * import { Input } from 'chenshone-ui'
  * ~~~
  * 支持 HTMLInput 的所有基本属性
  */

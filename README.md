@@ -1,4 +1,4 @@
-## chen-ui
+## chenshone-ui
 
 [![Build Status](https://travis-ci.com/vikingmute/vikingship.svg?token=mHoDqxyxXWX5BSpu8L9y&branch=master)](https://travis-ci.com/chenshone/chen-ui)
 
@@ -8,14 +8,14 @@ chen-ui 是使用 React+typescript 仿 antD 的组件库，是自己学习 ts �
 ### 安装来试试
 
 ```javascript
-npm install chen-ui --save
+npm install chenshone-ui --save
 ```
 
 ### 使用
 
 ```javascript
 // 加载样式
-import 'chen-ui/dist/index.css'
+import 'chenshone-ui/dist/index.css'
 // 引入组件
-import { Button } from 'chen-ui'
+import { Button } from 'chenshone-ui'
 ```
