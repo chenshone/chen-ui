@@ -40,7 +40,7 @@ export interface AutoCompleteProps extends Omit<InputProps, 'onSelect'> {
 
 /**
  * 自动联想组件
- *
+ *  支持 上下键选择，回车键选中，esc键取消
  * ~~~js
  * // 这样引用
  * import { AutoComplete } from 'chen-ui'
