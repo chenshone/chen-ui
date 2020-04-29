@@ -22,13 +22,30 @@ interface DataSourceObject {
 export type DataSourceType<T = {}> = T & DataSourceObject
 
 export interface AutoCompleteProps extends Omit<InputProps, 'onSelect'> {
+  /**
+   * 请求到的数据数组
+   */
   fetchSuggestions: (
     str: string
   ) => DataSourceType[] | Promise<DataSourceType[]>
+  /**
+   * 选中一个option触发的事件
+   */
   onSelect?: (item: DataSourceType) => void
+  /**
+   * 自定义每个item的格式
+   */
   renderOption?: (item: DataSourceType) => ReactElement
 }
 
+/**
+ * 自动联想组件
+ *
+ * ~~~js
+ * // 这样引用
+ * import { AutoComplete } from 'chen-ui'
+ * ~~~
+ */
 export const AutoComplete: FC<AutoCompleteProps> = (props) => {
   const {
     fetchSuggestions,
