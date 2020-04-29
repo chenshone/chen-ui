@@ -3,10 +3,10 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { AutoComplete, DataSourceType } from './AutoComplete'
 
-interface OWPlayerProps {
-  value: string
-  number: number
-}
+// interface OWPlayerProps {
+//   value: string
+//   number: number
+// }
 
 interface GithubUserProps {
   login: string
@@ -28,20 +28,20 @@ const SimpleComplete = () => {
   //   '西格玛',
   //   '天使姐姐',
   // ]
-  const owWithNumber = [
-    { value: '美', number: 11 },
-    { value: '麦爹', number: 1 },
-    { value: '法鸡', number: 4 },
-    { value: '安娜', number: 2 },
-    { value: '巴蒂', number: 15 },
-    { value: '毛妹', number: 23 },
-    { value: '老鼠', number: 3 },
-    { value: '源氏', number: 14 },
-    { value: '死神', number: 39 },
-    { value: '大锤', number: 12 },
-    { value: '西格玛', number: 30 },
-    { value: '天使姐姐', number: 42 },
-  ]
+  // const owWithNumber = [
+  //   { value: '美', number: 11 },
+  //   { value: '麦爹', number: 1 },
+  //   { value: '法鸡', number: 4 },
+  //   { value: '安娜', number: 2 },
+  //   { value: '巴蒂', number: 15 },
+  //   { value: '毛妹', number: 23 },
+  //   { value: '老鼠', number: 3 },
+  //   { value: '源氏', number: 14 },
+  //   { value: '死神', number: 39 },
+  //   { value: '大锤', number: 12 },
+  //   { value: '西格玛', number: 30 },
+  //   { value: '天使姐姐', number: 42 },
+  // ]
   // const handleFetch = (query: string) => {
   // return ow.filter((name) => name.includes(query))
   // .map((name) => ({ value: name }))

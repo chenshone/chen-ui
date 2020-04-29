@@ -26,7 +26,7 @@ export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
  * ### 引用方法
  *
  * ~~~js
- * import { Button } from 'chenui'
+ * import { Button } from 'chen-ui'
  * ~~~
  */
 export const Button: FC<ButtonProps> = (props) => {

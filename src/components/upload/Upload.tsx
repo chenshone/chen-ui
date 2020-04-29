@@ -1,8 +1,7 @@
-import React, { FC, useRef, ChangeEvent, useState, Children } from 'react'
+import React, { FC, useRef, ChangeEvent, useState } from 'react'
 import axios from 'axios'
 
 import UploadList from './UploadList'
-import Button from '../button/Button'
 import Dragger from './Dragger'
 
 export type UploadFileStatus = 'ready' | 'uploading' | 'success' | 'error'
@@ -52,6 +51,15 @@ export interface UploadProps {
   /** 取消上传回调 */
   onRemove?: (file: UploadFile) => void
 }
+
+/**
+ * 上传文件组件，支持做拽上传
+ * ### 引用方法
+ *
+ * ~~~js
+ * import { Upload } from 'chen-ui'
+ * ~~~
+ */
 export const Upload: FC<UploadProps> = (props) => {
   const {
     action,

@@ -36,7 +36,7 @@ export const MenuContext = createContext<IMenuContext>({ index: '0' })
 /**
  * 具有导航功能的菜单。支持横向纵向两种模式，支持下拉菜单。
  * ~~~js
- * import { Menu } from 'chenui'
+ * import { Menu } from 'chen-ui'
  * ~~~
  */
 export const Menu: FC<MenuProps> = (props) => {

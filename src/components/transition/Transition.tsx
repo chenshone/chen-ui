@@ -8,8 +8,10 @@ type AnimationName =
   | 'zoom-in-bottom'
   | 'zoom-in-right'
 
-type TransitionProps = CSSTransitionProps & {
+export type TransitionProps = CSSTransitionProps & {
+  /** 动画效果 */
   animation?: AnimationName
+  /** 如果children是自定义组件 需要设置为true */
   wrapper?: boolean
 }
 
