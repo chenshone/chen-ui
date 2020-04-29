@@ -5,8 +5,6 @@ import React, {
   FC,
 } from 'react'
 import classNames from 'classnames'
-import { CSSTransition } from 'react-transition-group'
-import { CSSTransitionProps } from 'react-transition-group/CSSTransition'
 
 import { MenuContext } from './Menu'
 import { MenuItemProps } from './MenuItem'
