@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/chenshone/chen-ui/static/css/main.cac2b19c.chunk.css",
+    "main.js": "/chenshone/chen-ui/main.61fea6d7e4558bf5ddc0.bundle.js",
+    "main.css.map": "/chenshone/chen-ui/static/css/main.cac2b19c.chunk.css.map",
+    "main.js.map": "/chenshone/chen-ui/main.61fea6d7e4558bf5ddc0.bundle.js.map",
+    "runtime~main.js": "/chenshone/chen-ui/runtime~main.61fea6d7e4558bf5ddc0.bundle.js",
+    "runtime~main.js.map": "/chenshone/chen-ui/runtime~main.61fea6d7e4558bf5ddc0.bundle.js.map",
+    "vendors~main.css": "/chenshone/chen-ui/static/css/vendors~main.f8f248a5.chunk.css",
+    "vendors~main.js": "/chenshone/chen-ui/vendors~main.61fea6d7e4558bf5ddc0.bundle.js",
+    "vendors~main.css.map": "/chenshone/chen-ui/static/css/vendors~main.f8f248a5.chunk.css.map",
+    "vendors~main.js.map": "/chenshone/chen-ui/vendors~main.61fea6d7e4558bf5ddc0.bundle.js.map",
+    "iframe.html": "/chenshone/chen-ui/iframe.html",
+    "precache-manifest.27dadf4f300a211d3bdbc911ee651eec.js": "/chenshone/chen-ui/precache-manifest.27dadf4f300a211d3bdbc911ee651eec.js",
+    "service-worker.js": "/chenshone/chen-ui/service-worker.js",
+    "vendors~main.61fea6d7e4558bf5ddc0.bundle.js.LICENSE.txt": "/chenshone/chen-ui/vendors~main.61fea6d7e4558bf5ddc0.bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime~main.61fea6d7e4558bf5ddc0.bundle.js",
+    "static/css/vendors~main.f8f248a5.chunk.css",
+    "vendors~main.61fea6d7e4558bf5ddc0.bundle.js",
+    "static/css/main.cac2b19c.chunk.css",
+    "main.61fea6d7e4558bf5ddc0.bundle.js"
+  ]
+}
